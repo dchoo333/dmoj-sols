@@ -1,0 +1,1 @@
+print({'MB': 'midget boys', 'MG': 'midget girls', 'JG': 'junior girls', 'JB': 'junior boys', 'SG': 'senior girls', 'SB': 'senior boys'}.get(input(), 'invalid code'))
