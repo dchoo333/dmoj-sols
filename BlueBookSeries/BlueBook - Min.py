@@ -1,0 +1,1 @@
+print("{:.2f}".format(min(map(float, (input() for _ in range(int(input())))))))
