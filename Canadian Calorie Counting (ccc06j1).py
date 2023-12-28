@@ -11,3 +11,4 @@ dessert = int(input())
 count = burger_calories[burger - 1] + side_calories[side - 1] + drink_calories[drink - 1] + dessert_calories[dessert - 1]
 
 print(f'Your total Calorie count is {count}.')
+
