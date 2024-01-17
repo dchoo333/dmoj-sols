@@ -16,4 +16,3 @@ while count < a:
                 print(x[j] + " " + y[k] + " " + z[s] + ".")
     
     count += 1
-
