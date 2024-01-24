@@ -6,3 +6,4 @@ for i in range(total+1):
                 print(f"{i} Brown Trout, {j} Northern Pike, {k} Yellow Pickerel")
                 count += 1
 print(f"Number of ways to catch fish: {count}")
+
