@@ -1,0 +1,1 @@
+print("Is an anagram.") if sorted(input().replace(' ', '')) == sorted(input().replace(' ', '')) else print(''.join([chr(i) for i in [73, 115, 32, 110, 111, 116, 32, 97, 110, 32, 97, 110, 97, 103, 114, 97, 109, 46]]))
