@@ -24,7 +24,6 @@ def format_sign(width, message):
         else:
             spaces_per_gap = total_spaces // num_gaps
             extra_spaces = total_spaces % num_gaps
-
             formatted_line = ""
             for i, word in enumerate(line):
                 formatted_line += word
