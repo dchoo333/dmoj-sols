@@ -22,3 +22,4 @@ print(W, "in Winnipeg")
 print(T, "in Toronto")
 print(H, "in Halifax")
 print(S, "in St. John's")
+
