@@ -1,0 +1,5 @@
+r = float(input())
+y0 = int(input())
+p0 = int(input())
+y1 = int(input())
+print(round(p0 * (1 + r/100) ** (y1 - y0)))
