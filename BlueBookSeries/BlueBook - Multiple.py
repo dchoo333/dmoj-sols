@@ -1,1 +1,0 @@
-print("yes" if int(input()) % int(input()) == 0 else "no")
