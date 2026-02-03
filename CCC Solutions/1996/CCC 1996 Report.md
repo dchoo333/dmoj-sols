@@ -25,7 +25,7 @@ Very Easy
 
 **Main idea / algorithm**
 
-Simply Implement divisibility algorithm given (Charles Dodgson) (repeatedly removing the last digit and subtracting it from the remaining number). Working directly on strings to handle very large integers (10^50)
+Simply implement divisibility algorithm given (Charles Dodgson) (repeatedly removing the last digit and subtracting it from the remaining number). Working directly on strings to handle very large integers (10^50). NB: C++ is used since python disallowed.
 
 **Time complexity**
 
