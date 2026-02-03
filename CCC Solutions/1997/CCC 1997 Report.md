@@ -26,7 +26,7 @@ Very Easy
 
 **Main idea / algorithm**
 
-Check if a number is divisible by 6, if yes it's nasty, else not nasty. Very simple modulo check.
+One solution (most efficient): Check if a number is divisible by 6, if yes it's nasty, else not nasty. Very simple modulo check. (See "S2 Remarks").
 
 **Time complexity**
 
