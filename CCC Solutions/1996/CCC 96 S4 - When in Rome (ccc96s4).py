@@ -1,67 +1,36 @@
-def int_to_roman(num):
-    values = [
-        1000, 900, 500, 400,
-        100, 90, 50, 40,
-        10, 9, 5, 4,
-        1
-    ]
-    numerals = [
-        'M', 'CM', 'D', 'CD',
-        'C', 'XC', 'L', 'XL',
-        'X', 'IX', 'V', 'IV',
-        'I'
-    ]
-
-    result = ""
-    for i in range(len(values)):
-        while num >= values[i]:
-            result += numerals[i]
-            num -= values[i]
-
-    return result
-
-def roman_to_int(roman):
-    values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    total = 0
-    prev_value = 0
-
+def r2i(s):
+    v = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
+    t = p = 0
     try:
-        for numeral in reversed(roman.upper()):
-            value = values[numeral]
-            if value < prev_value:
-                total -= value
-            else:
-                total += value
-            prev_value = value
-
-        if total <= 0 or total > 1000:
+        for c in s.upper()[::-1]:
+            x = v[c]
+            t = t - x if x < p else t + x
+            p = x
+        if t < 1 or t > 1000:
             raise ValueError
-
-        return total
-    except (KeyError, ValueError):
+        return t
+    except:
         return "CONCORDIA CUM VERITATE"
 
-def roman_calculator(test_cases):
-    def add_roman_numerals(roman1, roman2):
-        result = roman_to_int(roman1) + roman_to_int(roman2)
-        if result <= 0 or result > 1000:
-            return "CONCORDIA CUM VERITATE"
-        return int_to_roman(result)
+def i2r(n):
+    a = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
+    b = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
+    s = ""
+    for i in range(len(a)):
+        while n >= a[i]:
+            s += b[i]
+            n -= a[i]
+    return s
 
-    results = []
-    for test_case in test_cases:
-        parts = test_case.strip().split('+')
-        if len(parts) == 2 and parts[1].endswith('='):
-            roman1 = parts[0]
-            roman2 = parts[1][:-1]
-            result = add_roman_numerals(roman1, roman2)
-            results.append(f"{test_case}{result}")
+def calc(x):
+    y,z = x[:-1].split("+")
+    u = r2i(y)
+    v = r2i(z)
+    if isinstance(u,str) or isinstance(v,str):
+        return "CONCORDIA CUM VERITATE"
+    w = u + v
+    return i2r(w) if 0 < w <= 1000 else "CONCORDIA CUM VERITATE"
 
-    return results
-
-cases = []
-for i in range(int(input())):
-    cases.append(input())
-    
-for res in roman_calculator(cases):
-    print(res)
+for _ in range(int(input())):
+    s = input()
+    print(s + calc(s))
