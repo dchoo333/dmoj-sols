@@ -1,19 +1,17 @@
 n = int(input())
-    
-x = [0] * n
-y = [0] * n
-z = [0] * n
-for i in range(n):
-    year, month, day = map(int, input().split())
-    if 2007 - year > 18:
+
+for _ in range(n):
+    y, m, d = map(int, input().split())
+
+    if y < 1989:
         print("Yes")
-    elif 2007 - year <= 17:
+    elif y > 1989:
         print("No")
-    elif month > 2:
-        print("No")
-    elif month == 1:
+    elif m < 2:
         print("Yes")
-    elif day > 27:
+    elif m > 2:
         print("No")
-    elif day <= 27:
+    elif d <= 27:
         print("Yes")
+    else:
+        print("No")
