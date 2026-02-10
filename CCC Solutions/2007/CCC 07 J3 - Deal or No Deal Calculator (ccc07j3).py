@@ -1,23 +1,16 @@
-a = int(input())
-arr = []
+n = int(input())
+a = [int(input()) for _ in range(n)]
 
-for i in range(a):
-    arr.append(int(input()))
+v = [100, 500, 1000, 5000, 10000, 25000, 50000, 100000, 500000, 1000000]
 
-t_values = [100, 500, 1000, 5000, 10000, 25000, 50000, 100000, 500000, 1000000]
+for x in a:
+    v[x - 1] = 0
 
-count = 10 - a
+c = 10 - n
+s = sum(v)
+m = int(input())
 
-for i in range(a):
-    t_dict = {1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 7: 6, 8: 7, 9: 8, 10: 9}
-    t_index = t_dict.get(arr[i])
-    if t_index is not None:
-        t_values[t_index] = 0
-
-finalmoney = sum(t_values)
-money = int(input())
-
-if finalmoney / count < money:
-    print("deal")  # YAY INFINITE MONEY GLITCH
+if s / c < m:
+    print("deal")
 else:
-    print("no deal")  # NO DEAL YOU SCAMMER
+    print("no deal")
