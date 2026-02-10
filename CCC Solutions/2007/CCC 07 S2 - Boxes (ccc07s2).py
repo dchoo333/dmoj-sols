@@ -1,31 +1,29 @@
-import sys
-import math
-def check(a, b):
-    temp1 = sorted(a)
-    temp2 = sorted(b)
-    for i in range(3):
-        if temp1[i] > temp2[i]:
-            return False
-    return True
+def ok(a, b):
+    a = sorted(a)
+    b = sorted(b)
+    return a[0] <= b[0] and a[1] <= b[1] and a[2] <= b[2]
 
-N = int(input())
-s = [None]*N
-sizes = [None]*N
-for i in range(N):
+n = int(input())
+dims = []
+vol = []
+
+for _ in range(n):
     a, b, c = map(int, input().split())
-    s[i] = str(a) + " " + str(b) + " " + str(c)
-    sizes[i] = a * b * c
+    dims.append([a, b, c])
+    vol.append(a * b * c)
 
-cases = int(input())
-for i in range(cases):
-    found = False
-    temp = list(map(int, input().split()))
-    ans = float('inf')
-    for j in range(len(s)):
-        if check(temp, list(map(int, s[j].split()))):
-            ans = min(sizes[j], ans)
-            found = True
-    if not found:
+q = int(input())
+
+for _ in range(q):
+    x = list(map(int, input().split()))
+    best = None
+
+    for i in range(n):
+        if ok(x, dims[i]):
+            if best is None or vol[i] < best:
+                best = vol[i]
+
+    if best is None:
         print("Item does not fit.")
     else:
-        print(ans)
+        print(best)
