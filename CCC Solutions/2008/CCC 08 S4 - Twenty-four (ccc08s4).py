@@ -12,19 +12,19 @@ for _ in range(int(input())):
             memo[h] = h[0] if h[0] <= 24 else 0
             return memo[h]
         n = len(h)
-        maxval = 0
+        ans = 0
         for i in range(n):
             for j in range(n):
                 if i == j:
                     continue
                 a, b = h[i], h[j]
                 rest = tuple(h[k] for k in range(n) if k != i and k != j)
-                next_vals = [a+b, a-b, a*b]
+                nv = [a+b, a-b, a*b]
                 if b != 0 and a % b == 0:
-                    next_vals.append(a//b)
-                for val in next_vals:
-                    maxval = max(maxval, func(rest + (val,)))
-        memo[h] = maxval
-        return maxval
+                    nv.append(a//b)
+                for val in nv:
+                    ans = max(ans, func(rest + (val,)))
+        memo[h] = ans
+        return ans
 
     print(func(h))
