@@ -1,18 +1,15 @@
-coldest_city = ""
-coldest_temperature = float('inf')
+c = ""
+t = 10**9
 
 while True:
-    try:
-        city, temperature = input().split()
-        temperature = int(temperature)
-        
-        if temperature < coldest_temperature:
-            coldest_city = city
-            coldest_temperature = temperature
-        
-        if city == 'Waterloo':
-            break
-    except ValueError:
+    city, temp = input().split()
+    temp = int(temp)
+
+    if temp < t:
+        t = temp
+        c = city
+
+    if city == "Waterloo":
         break
 
-print(coldest_city)
+print(c)
