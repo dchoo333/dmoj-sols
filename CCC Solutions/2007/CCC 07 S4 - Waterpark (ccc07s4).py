@@ -1,28 +1,32 @@
-adj = []
-nums = []
-N = 0
-def find_path(i):
-    global nums, adj, N
-    for nxt in adj[i]:
-        if nxt == N:
-            nums[i] += 1
-        elif nums[nxt] != 0:
-            nums[i] += nums[nxt]
-        else:
-            find_path(nxt)
-            nums[i] += nums[nxt]
-
 N = int(input())
-adj = [list() for _ in range(N+1)]
-nums = [0 for _ in range(N+1)]
-for i in range(N+1):
-    adj[i] = []
+
+adj = [[] for _ in range(N + 1)]
+dp = [0] * (N + 1)
+
 while True:
-    line = input().split()
-    a = int(line[0])
-    b = int(line[1])
+    a, b = map(int, input().split())
     if a == 0 and b == 0:
         break
     adj[a].append(b)
-find_path(1)
-print(nums[1])
+
+stk = [(1, 0)]
+
+while stk:
+    u, i = stk.pop()
+
+    if i < len(adj[u]):
+        v = adj[u][i]
+        stk.append((u, i + 1))
+
+        if v == N:
+            dp[u] += 1
+        elif dp[v] != 0:
+            dp[u] += dp[v]
+        else:
+            stk.append((v, 0))
+    else:
+        if stk:
+            pu, _ = stk[-1]
+            dp[pu] += dp[u]
+
+print(dp[1])
