@@ -1,4 +1,4 @@
-translation_table = {
+d = {
     'CU': 'see you',
     ':-)': "I'm happy",
     ':-(': "I'm unhappy",
@@ -14,11 +14,7 @@ translation_table = {
 }
 
 while True:
-    short_form = input().strip()
-    
-    if short_form == 'TTYL':
-        print('talk to you later')
+    s = input().strip()
+    print(d.get(s, s))
+    if s == 'TTYL':
         break
-    
-    translation = translation_table.get(short_form, short_form)
-    print(translation)
