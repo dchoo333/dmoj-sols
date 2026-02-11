@@ -198,7 +198,7 @@ Medium–Hard
 
 **Main idea / algorithm**
 
-Use iterative DFS with memoization to determine the winning player for each initial state by checking all possible moves; standard combinatorial game DP.
+Use iterative DFS with memoisation to determine the winning player for each initial state by checking all possible moves; standard combinatorial game DP.
 
 **Time complexity**
 
