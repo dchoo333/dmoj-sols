@@ -276,3 +276,4 @@ Medium
 **All DMOJ subtasks accepted in:**
 
 `0.167s, 10.59 MB`
+
