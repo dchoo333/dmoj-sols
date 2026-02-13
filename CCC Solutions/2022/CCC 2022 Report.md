@@ -120,6 +120,13 @@ Easy
 
 `1.51s, 11.23 MB`
 
+**Note**
+
+Of course, one liners are possible.
+
+```python
+n = int(input()); print(sum((n-4*x)%5==0for x in range(n//4+1)))
+```
 ---
 
 ### **CCC 22 S2 – Good Groups (ccc22s2)**
