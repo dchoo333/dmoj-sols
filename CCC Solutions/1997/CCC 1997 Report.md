@@ -110,3 +110,4 @@ Medium - Hard
 **All DMOJ subtasks accepted in:**
 
 `0.00s, 3.59 MB`
+
