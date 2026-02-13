@@ -239,3 +239,4 @@ Hard
 **All DMOJ subtasks accepted in:**
 
 `2.05s, 25.05 MB` (C++17)
+
