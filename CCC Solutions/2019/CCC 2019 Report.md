@@ -218,6 +218,6 @@ O(n²)
 
 Hard
 
-**All CCC/CEMC subtasks accepted in:**
+**All DMOJ subtasks accepted in:**
 
 `8.59s, 37.82 MB`
