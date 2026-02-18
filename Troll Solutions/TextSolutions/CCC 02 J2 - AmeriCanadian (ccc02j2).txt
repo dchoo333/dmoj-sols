@@ -1,0 +1,5 @@
+neighbour
+door
+instructour
+transport
+floor
