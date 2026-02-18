@@ -3,6 +3,8 @@
 Welcome to the most comprehensive repository of CCC solutions on the DMOJ / CEMC judges. From 1996 to 2025, this repo features 253 solutions which pass all their
 subtasks on DMOJ, and 254 solutions which pass all subtasks on the official CCC judge (ahem, [CCC 19 J5](https://dmoj.ca/problem/ccc19j5)).
 
+On DMOJ, these problems are worth a total of 1849 points (last update: Feb 26). Of course, this is not accounting for the scaling system (this would place you double the current top-placed user).
+
 **Some Notes**
 
 Some CCC solutions are from years which I actually participated - and those may seem to have less conformity to the 'Good Programming Practices', e.g. proper variable names,
