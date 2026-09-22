@@ -20,7 +20,7 @@ Out of the CCC problems from 1996 to 2025 these are, in my opinion, the 11 harde
 
 Podium:
 
-1. [CCC 26 S5 - On the Fence](https://dmoj.ca/problem/ccc26s5) - According to DMOJ the hardest contest yet, scored only 45/75 in Senior after completing Junior. S5 is the hardest CCC question so far.
+1. [CCC 26 S5 - On the Fence](https://dmoj.ca/problem/ccc26s5) - N, M, K are too large to try too many rectangles. In contest one had to realise that the optimum sits near a small set of points on a piecewise quadratic objective and the penalty and leftover fence trade off makes things overall messy. 
 2. [CCC 19 J5 - Rule of Three](https://dmoj.ca/problem/ccc19j5) - an very nontrivial subtask worth 15 points was added by [d](https://dmoj.ca/user/d), which required heavy optimisation.
 3. [CCC 24 S5 - Chocolate Bar Partition](https://dmoj.ca/problem/ccc24s5) - Perhaps recency bias is occurring here, but it is worth 20p on DMOJ. I am really satisfied with the solution
 that was acquired in C++, looking for the longest subarray where the adjusted prefix sums of the first row and the negated adjusted prefix sums of the second row have repeated values, which, of course, indicates a balanced subarray.
@@ -40,7 +40,7 @@ No description for these, but you can look at the solutions and see why:
 
 In my opinion these are the 6 hardest years. Of course, as technology advances, so too does the CCC.
 
-1. [CCC 2026](https://dmoj.ca/problems/?search=CCC+%2726) - S5 is the hardest CCC question ever.
+1. [CCC 2026](https://dmoj.ca/problems/?search=CCC+%2726) - S5 is the hardest CCC question ever. (Only 48/75 in contest)
 2. [CCC 2019](https://dmoj.ca/problems/?search=CCC+%2719) - J5, S4, and S5 are all 20p I believe.
 3. [CCC 2025](https://dmoj.ca/problems/?search=CCC+%2725) - S4 and S5 difficult
 4. [CCC 2020](https://dmoj.ca/problems/?search=CCC+%2720) - S3 surprisingly hard?
