@@ -78,29 +78,25 @@ Easy
 
 **Main idea / algorithm**
 
-What the?!? The most impossible J5 and the most loathed CCC problem by far.
+J5 may be the most loathed CCC problem on the DMOJ, with the [general concensus](https://dmoj.ca/problem/ccc19j5#comment-10966) being that it should be worth more points. I have only recently started revisiting this problem to achieve the remaining points in d's subtask. The code I ended up using to AC in the end (and that which is now under the solutions tab) had an algorithm of a sort of meet-in-the middle BFS. The brute force typically has branching^S states, and we can cut it to about branching ^ (S/2) per side. On top of that there are some small optimisations, such as each string being packed into a single u64, growing whichever frontier is currently smaller instead of fixed S/2, and pretty aggressive pruning on counts.
 
-The idea is, use a custom bitset structure and KMP-like matching to simulate string transformations and find valid sequences. It will pass for all official CCC subtasks.
-
-However for DMOJ (thanks very much d), there are added subtasks which create essentially an O(N) type of constraint on an inherently exponential problem. This solution will not pass.
-
-In my opinion, this should be worth at least 25+pp. I've solved 30p+ that did not feel as impossible as this.
+However, note that a [much faster](https://dmoj.ca/src/1865918) solution is possible. Suppose L is the length of the longest string that shows up during the search, and B is how many different next strings one state can produce in a single state. We work backwards from F and perform a DFS, memoising every dead state. By fixing the exact rule multiset first, memoising failures and stopping at the first solution a O(L * b^S) but O(S*L) typical can be achieved, with a maximum single-case runtime of 0.003s.
 
 **Time complexity**
 
-O(large, attempted to optimise with hashing and bitsets)
+O(L*b^(S/2)), with some count pruning
 
 **Space complexity**
 
-O(n * size of sets)
+O(sum of layer sizes)
 
 **Difficulty**
 
 Very Very Hard
 
-**All CCC/CEMC subtasks accepted in:**
+**All DMOJ subtasks accepted in:**
 
-`0.047s, 179.57 MB`
+`1.304s, 213.47 MB`
 
 ---
 
