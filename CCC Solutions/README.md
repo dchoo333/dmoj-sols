@@ -40,7 +40,7 @@ No description for these, but you can look at the solutions and see why:
 
 In my opinion these are the 6 hardest years. Of course, as technology advances, so too does the CCC.
 
-1. [CCC 2026](https://dmoj.ca/problems/?search=CCC+%2726) - S5 is the hardest CCC question ever. (Only 48/75 in contest)
+1. [CCC 2026](https://dmoj.ca/problems/?search=CCC+%2726) - S5 is the hardest CCC question ever. (Only 51/75 in contest)
 2. [CCC 2019](https://dmoj.ca/problems/?search=CCC+%2719) - J5, S4, and S5 are all 20p I believe.
 3. [CCC 2025](https://dmoj.ca/problems/?search=CCC+%2725) - S4 and S5 difficult
 4. [CCC 2020](https://dmoj.ca/problems/?search=CCC+%2720) - S3 surprisingly hard?
