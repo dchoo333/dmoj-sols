@@ -1,6 +1,6 @@
 # CCC Solutions (From 1996 to Current - 2026)
 
-Welcome to the most comprehensive repository of CCC solutions on the DMOJ / CEMC judges. From 1996 to 2025, this repo features 263 solutions which pass all their subtasks on both the CCC judge and DMOJ judge.
+Welcome to the most comprehensive repository of CCC solutions on the DMOJ / CEMC judges. From 1996 to 2026, this repo features 263 solutions which pass all their subtasks on both the CCC judge and DMOJ judge.
 
 On DMOJ, these problems are worth a total of 1937 points (last update: September 26). Of course, this is not accounting for the scaling system (this would place you double the current top-placed user).
 
@@ -16,7 +16,7 @@ For example, some solutions may be listed as `O(1000)`, which is essentially the
 
 **Problems, ranked**
 
-Out of the CCC problems from 1996 to 2025 these are, in my opinion, the 11 hardest (on the DM::OJ):
+Out of the CCC problems from 1996 to 2026 these are, in my opinion, the 11 hardest (on the DM::OJ):
 
 Podium:
 
