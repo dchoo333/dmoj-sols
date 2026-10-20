@@ -1,0 +1,1 @@
+print((lambda n, m: "%.6f" % (n * (1 - ((n - 2) / n) ** m)))(*map(int, input().split())))
