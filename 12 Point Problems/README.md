@@ -50,7 +50,7 @@ A low AC % doesn't always mean a hard problem e.g. Mock CCC '20 J5 - A Prime Pro
 DMOJ of course has a scaling system. Per the [Point System Rework](https://dmoj.ca/post/103-point-system-rework) post and the judge's [source code](https://github.com/DMOJ/online-judge/blob/master/judge/models/profile.py), your score is
 
 ```math
-\text{Points} = P + B
+\text{pp} = P + B
 ```
 
 where $`P`$ is the "quality" measure, weighted sum of your best problem scores and $`B`$ is the bonus for the "quantity", or the number of AC problems.
@@ -94,7 +94,7 @@ B \approx 300 \times 0.750447 \approx 225.13
 Therefore,
 
 ```math
-\text{Points} = P + B \approx 238.58 + 225.13 \approx \mathbf{463.71}
+\text{pp} = P + B \approx 238.58 + 225.13 \approx \mathbf{463.71}
 ```
 
 Therefore due to scaling our $`5544`$ raw points are now a measly $`463.7`$, roughly $`8.4\%`$ of the raw total. (Under the 2019 coeff of $`150`$ it would be even worse $`238.58 + 112.57 \approx 351.15`$.) The upper limit for someone who solved with infinite 12-pointers is $`240 + 300 = 540`$, so 462 of them already gets us $`\frac{463.71}{540} \approx 86\%`$ of the way there.
