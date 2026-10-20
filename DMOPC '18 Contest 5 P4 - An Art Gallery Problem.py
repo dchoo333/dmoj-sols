@@ -1,0 +1,5 @@
+n=int(input())
+a=input().strip()
+b=input().strip()
+f=lambda s:sum((s[i]=='F')^(i&1) for i in range(n))
+print("YES" if f(a)==f(b) else "NO")
